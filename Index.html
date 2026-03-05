@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscripción a Mesas de Examen</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <h2>Inscripción a Mesas de Examen</h2>
+        <p>Ciencias de Datos e Inteligencia Artificial</p>
+
+        <form id="formularioInscripcion">
+
+            <div class="grupo-campo">
+                <label for="nombre">Nombre y Apellido</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Sin puntos ni comas y con mayúsculas"
+                    required>
+            </div>
+
+            <div class="grupo-campo">
+                <label for="DNI">Número de documento</label>
+                <input type="text" id="DNI" name="DNI" placeholder="Sin puntos ni espacios" required>
+            </div>
+
+            <div class="grupo-campo">
+                <label>1er Llamado</label>
+                <div class="caja-checkboxes">
+                    <label><input type="checkbox" name="mesas" value="Hardware y SO - 2/3/2026"> Hardware y Sistemas
+                        Operativos: 2/3</label>
+                    <label><input type="checkbox" name="mesas" value="Análisis Matemático - 3/3/2026"> Análisis
+                        Matemático: 3/3</label>
+                    <label><input type="checkbox" name="mesas" value="Matemática Discreta - 4/3/2026"> Matemática
+                        Discreta: 4/3</label>
+                    <label><input type="checkbox" name="mesas" value="Inglés Técnico - 5/3/2026"> Inglés Técnico:
+                        5/3</label>
+                    <label><input type="checkbox" name="mesas" value="Base y Proc. de Datos - 6/3/2026"> Base y Proc. de
+                        Datos: 6/3</label>
+                    <label><input type="checkbox" name="mesas" value="Técnicas de Comunicación - 9/3/2026"> Técnicas de
+                        Comunicación: 9/3</label>
+                    <label><input type="checkbox" name="mesas" value="Programación I - 10/3/2026"> Programación I:
+                        10/3</label>
+                    <label><input type="checkbox" name="mesas" value="Álgebra - 11/3/2026"> Álgebra: 11/3</label>
+                </div>
+            </div>
+
+            <div class="grupo-campo">
+                <label>2do Llamado</label>
+                <div class="caja-checkboxes">
+                    <label><input type="checkbox" name="mesas" value="Técnicas de Comunicación - 12/3/2026"> Técnicas de
+                        Comunicación: 12/3</label>
+                    <label><input type="checkbox" name="mesas" value="Análisis Matemático - 13/3/2026"> Análisis
+                        Matemático: 13/3</label>
+                    <label><input type="checkbox" name="mesas" value="Matemática Discreta - 16/3/2026"> Matemática
+                        Discreta: 16/3</label>
+                    <label><input type="checkbox" name="mesas" value="Hardware y SO - 17/3/2026"> Hardware y Sistemas
+                        Operativos: 17/3</label>
+                    <label><input type="checkbox" name="mesas" value="Base y Proc. de Datos - 18/3/2026"> Base y Proc.
+                        de Datos: 18/3</label>
+                    <label><input type="checkbox" name="mesas" value="Inglés Técnico - 19/3/2026"> Inglés Técnico:
+                        19/3</label>
+                    <label><input type="checkbox" name="mesas" value="Programación I - 20/3/2026"> Programación I:
+                        20/3</label>
+                    <label><input type="checkbox" name="mesas" value="Álgebra - 25/3/2026"> Álgebra: 25/3</label>
+                </div>
+            </div>
+
+            <button type="submit" id="botonEnviar">Inscribirme</button>
+            <div id="mensaje"></div>
+        </form>
+    </div>
+
+    <div class="contenedor lista-alumnos-box">
+        <h3>Alumnos Inscriptos</h3>
+        <div id="listaInscriptos">
+            <p>Cargando lista de inscriptos...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
